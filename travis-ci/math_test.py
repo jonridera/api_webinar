@@ -1,5 +1,4 @@
 from calculator import *
-from creds import *
 from testrail import APIClient
 
 # Project ID from TestRail
@@ -62,9 +61,9 @@ def run_tests(section_list, api):
 
 
 def main():
-    # Declare TestRail API using data from creds.py
+    # Declare TestRail API
     testrail_api = APIClient(TESTRAIL_URL)
-    testrail_api.user = TESTRAIL_USER
+    testrail_api.user = TESTRAIL_EMAIL_ADDRESS
     testrail_api.password = TESTRAIL_API_TOKEN
 
     # Retrieve all sections for the project
