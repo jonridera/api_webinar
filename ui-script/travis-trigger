@@ -1,5 +1,5 @@
 name: Travis CI Build
-description: Triggers a Travis CI build when opening a test plan. See https://docs.travis-ci.com/user/triggering-builds
+description: Triggers a Travis CI build when viewing a test plan. See https://docs.travis-ci.com/user/triggering-builds
 version: 1.0
 includes: ^plans/view
 excludes: 
