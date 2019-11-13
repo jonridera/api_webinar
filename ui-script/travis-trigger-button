@@ -8,7 +8,6 @@ $(document).ready(
 function() {
     var data = '{ "request": {"branch":"master", "run_id": ' + uiscripts.context.run.id + '}}';
     var button = $('<div class="toolbar content-header-toolbar"><a class="toolbar-button toolbar-button-last toolbar-button-first content-header-button button-start" href="javascript:void(0)">Travis CI</a></div>');
-    console.log(data);
 
     $("#content-header .content-header-inner").prepend(button);
 
@@ -28,7 +27,6 @@ function() {
                         xhr.setRequestHeader("Accept", "application/json");
                         xhr.setRequestHeader("Travis-API-Version", 3);
                         xhr.setRequestHeader("Authorization", "token  <token>");
-                        console.log(data);
                     },
                     success: function(data, status, xhr){
                         alert('Travis CI build request successful');
