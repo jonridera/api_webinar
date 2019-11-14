@@ -18,14 +18,14 @@ $(document).ready(
     {
         $.ajax(
             {
-            url: 'https://api.travis-ci.com/repo/jonrgurock%2Fsamplerepo/requests',
+            url: 'https://api.travis-ci.com/repo/<owner>%2F<repo>/requests',
             dataType: 'json',
             type: 'POST',
             beforeSend: function(xhr, settings){
                 xhr.setRequestHeader("Content-Type", "application/json");
                 xhr.setRequestHeader("Accept", "application/json");
                 xhr.setRequestHeader("Travis-API-Version", 3);
-                xhr.setRequestHeader("Authorization", "token  G6vdfAedkcNLbtlSnyFKu ");
+                xhr.setRequestHeader("Authorization", "token  <token>");
                 console.log(data);
             },
             success: function(data, status, xhr){
