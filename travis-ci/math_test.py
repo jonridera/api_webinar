@@ -85,7 +85,7 @@ def main():
 
     # Display some stuff
     # print(all_results)
-    print('Testing Complete!\nResults available here: https://jonreynolds.testrail.io/index.php?/runs/view/' + str(new_run['id']))
+    print('Testing Complete!\nResults available here: ' + TESTRAIL_URL + 'index.php?/runs/view/' + str(new_run['id']))
     pass
 
 
